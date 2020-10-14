@@ -8,8 +8,8 @@
         xmlns:lan="http://lan.design.com"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <Button lan:Assists.UseDisabledDesign="True" Height="30" Width="100" Content="测试" IsEnabled="True"></Button>
-        <Button x:Name="button" IsEnabled="False" lan:Assists.UseDisabledDesign="True" Height="30" Width="100" Content="测试" ></Button>
-        <Button IsEnabled="False"  Height="30" Width="100" Content="测试" ></Button>
+        <!--<Button lan:Assists.UseDisabledDesign="True" Height="30" Width="100" Content="测试" IsEnabled="True"></Button>-->
+        <Button x:Name="button" lan:Assists.UseDisabledDesign="True" IsEnabled="False" Height="30" Width="100" Content="测试" ></Button>
+        <!--<Button IsEnabled="False"  Height="30" Width="100" Content="测试" ></Button>-->
     </StackPanel>
 </Window>

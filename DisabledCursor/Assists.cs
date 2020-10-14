@@ -55,7 +55,7 @@ namespace DisabledCursor
 
         private static void Framework_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            if (sender is FrameworkElement framework) {
+            if (sender is FrameworkElement framework && framework.IsLoaded) {
                 SetEnable(framework);
             }   
         }
