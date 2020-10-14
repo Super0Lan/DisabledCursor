@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        xmlns:lan="http://lan.design.com"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button lan:Assists.UseDisabledDesign="True" Height="30" Width="100" Content="测试" IsEnabled="True"></Button>
+        <Button x:Name="button" IsEnabled="False" lan:Assists.UseDisabledDesign="True" Height="30" Width="100" Content="测试" ></Button>
+        <Button IsEnabled="False"  Height="30" Width="100" Content="测试" ></Button>
+    </StackPanel>
+</Window>

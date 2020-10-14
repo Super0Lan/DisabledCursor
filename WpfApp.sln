@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{90EFECEA-65D5-45E4-BF60-F4917F5A05C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisabledCursor", "DisabledCursor\DisabledCursor.csproj", "{B43FA378-7084-4A22-83B9-E9A8E01921CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90EFECEA-65D5-45E4-BF60-F4917F5A05C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90EFECEA-65D5-45E4-BF60-F4917F5A05C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90EFECEA-65D5-45E4-BF60-F4917F5A05C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90EFECEA-65D5-45E4-BF60-F4917F5A05C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43FA378-7084-4A22-83B9-E9A8E01921CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43FA378-7084-4A22-83B9-E9A8E01921CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43FA378-7084-4A22-83B9-E9A8E01921CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43FA378-7084-4A22-83B9-E9A8E01921CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A319D5D4-8440-478E-93C0-A3C27F2BC47F}
+	EndGlobalSection
+EndGlobal
