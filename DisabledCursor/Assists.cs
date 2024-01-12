@@ -50,7 +50,7 @@ namespace DisabledCursor
 
         private static void SetEnable(FrameworkElement framework) {
             var adorner = (UnableAdorner)framework.GetOrAddAdorner(typeof(UnableAdorner));
-            adorner.SetEnable(framework.IsEnabled);
+            adorner?.SetEnable(framework.IsEnabled);
         }
 
         private static void Framework_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)

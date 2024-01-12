@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Documents;
 
@@ -18,23 +16,14 @@ namespace DisabledCursor
         public static Adorner GetOrAddAdorner(this UIElement uIElement, Type type)
         {
             AdornerLayer adornerLayer = AdornerLayer.GetAdornerLayer(uIElement);
-            if (adornerLayer == null)
+            if (adornerLayer != null)
             {
-                throw new Exception("VisualParents Must have AdornerDecorator!");
+                var adorner = adornerLayer.GetAdorners(uIElement)?.FirstOrDefault(x => x?.GetType() == type);
+                adorner = (Adorner)Activator.CreateInstance(type, new object[] { uIElement });
+                adornerLayer.Add(adorner);
+                return adorner;
             }
-            var adorner = adornerLayer.GetAdorners(uIElement)?.FirstOrDefault(x => x?.GetType() == type);
-            if (adorner == null)
-            {
-                lock (uIElement)
-                {
-                    if (adorner == null)
-                    {
-                        adorner = (Adorner)Activator.CreateInstance(type, new object[] { uIElement });
-                        adornerLayer.Add(adorner);
-                    }
-                }
-            }
-            return adorner;
+            return null;
         }
     }
 }
